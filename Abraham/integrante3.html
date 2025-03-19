@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bienvenidos al Sitio Web</title>
+	<!-- Incluir la fuente Raleway desde Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+	<style>
+    	/* Aplicamos la fuente Raleway */
+    	body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #E57373; /* Rojo pastel */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%; /* Define el ancho */
+    max-width: 600px; /* Evita que se haga demasiado ancho */
+    height: 70vh; /* Ajusta el alto para que sea mayor que el ancho */
+    max-height: 80vh; /* Evita que sea demasiado alto en pantallas grandes */
+    padding: 25px;
+    background-color: #FFCDD2;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.container:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el mouse */
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #B71C1C; /* Rojo oscuro */
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #D32F2F;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+v {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 17px;
+}
+
+.option-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #B71C1C;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #880E4F;
+    transform: translateY(-5px);
+}
+
+.option-btn:active {
+    transform: translateY(2px);
+}
+
+/* Estilos para las imágenes de opción */
+.option-img {
+    width: 50px; /* Tamaño de las imágenes */
+    height: 50px;
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre la imagen */
+.option-img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Efecto de sombra más pronunciado */
+}
+
+.extra-option{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.extra-option-btn {
+    padding: 12px 25px;
+    background-color: #D32F2F;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.extra-option-btn:hover {
+    background-color: #880E4F;
+    transform: translateY(-3px);
+}
+
+.extra-option-btn:active {
+    transform: translateY(1px);
+}
+
+
+
+    	/* Imagen de perfil en la esquina superior izquierda */
+    	.perfil-img {
+        	width: 150px; /* Tamaño de la imagen */
+        	height: 120px; /* Igual que el ancho para que sea circular */
+        	border-radius: 50%; /* Hace que la imagen sea completamente redonda */
+        	position: absolute; /* Posicionamiento relativo al .container */
+        	top: 10px; /* Subir un poco la imagen fuera del recuadro */
+        	left: 475px; /* Mover la imagen hacia la izquierda */
+        	border: 4px solid white; /* Opcional: Borde blanco para que resalte */
+        	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Opcional: Sombra suave */
+    	}
+
+    	.info-img{
+            	width: 150px;
+            	height: 80px;
+            	border-radius: 10%;
+            	position: absolute;
+            	top: 223px;
+            	left: 460px;
+            	border: 2px #B71C1C;
+            	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+   	}
+
+    	.Gustos-img{
+            	width: 150px;
+            	height: 80px;
+            	border-radius: 10%;
+            	position: absolute;
+            	top: 320px;
+            	left: 460px;
+            	border: 2px #B71C1C;
+            	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    	}
+
+    	.Sitios-img{
+            	width: 150px;
+            	height: 80px;
+            	border-radius: 10%;
+            	position: absolute;
+            	top: 418px;
+            	left: 460px;
+            	border: 2px #B71C1C;
+            	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    	}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+    	<img src="yo.jpg" alt="Foto de perfil" class="perfil-img">
+    	<h1>Hola! Me llamo Abraham</h1>
+    	<p>Bienvenido a mi página, ¿Qué quieres saber de mi?</p>
+    	<h2>Selecciona una opción:</h2>
+    	<div class="options">
+        	<a href="Info_Personal.html" class="option-btn">
+            	<img src="Info.PNG" alt="Foto Info" class="option-img">Info. Personal
+        	</a>
+        	<a href="Gustos.html" class="option-btn">
+            	<img src="Gustos.jpg" alt="Foto Gustos" class="option-img">Mis gustos
+        	</a>
+        	<a href="Sitios.html" class="option-btn">
+            	<img src="Sitios.jpg" alt="Foto Sitios" class="option-img">Sitios Recomendados
+        	</a>
+    	</div>
+	</div>
+	<div class="extra-option">
+    	<a href="index.php" class="extra-option-btn">Regresar al Menu</a>
+	</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bienvenidos al Sitio Web</title>
+	<!-- Incluir la fuente Raleway desde Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+	<style>
+    	/* Aplicamos la fuente Raleway */
+    	body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #E57373; /* Rojo pastel */
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%; /* Define el ancho */
+    max-width: 600px; /* Evita que se haga demasiado ancho */
+    height: 70vh; /* Ajusta el alto para que sea mayor que el ancho */
+    max-height: 80vh; /* Evita que sea demasiado alto en pantallas grandes */
+    padding: 25px;
+    background-color: #FFCDD2;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s, transform 0.2s;
+
+}
+
+.container:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el mouse */
+}
+
+h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #B71C1C; /* Rojo oscuro */
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #D32F2F;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.extra-option {
+    position: absolute;
+    top: 20px;  /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la derecha */
+}
+
+.extra-option-btn {
+    padding: 12px 25px;
+    background-color: #D32F2F; /* Rojo oscuro */
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.extra-option-btn:hover {
+    background-color: #880E4F;
+    transform: translateY(-3px);
+}
+
+.extra-option-btn:active {
+    transform: translateY(1px);
+}
+
+	
+	.yo1-img{
+                width: 170px;
+                height: 200px;
+                border-radius: 10%;
+                position: absolute;
+                top: 50px;
+                left: 330px;
+                border: 2px #B71C1C;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+        }
+
+
+    	.yo2-img{
+            	width: 170px;
+            	height: 200px;
+            	border-radius: 10%;
+            	position: absolute;
+            	top: 150px;
+            	left: 460px;
+            	border: 2px #B71C1C;
+            	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+   	}
+
+    	.yo3-img{
+            	width: 170px;
+            	height: 200px;
+            	border-radius: 10%;
+            	position: absolute;
+            	top: 290px;
+            	left: 330px;
+            	border: 2px #B71C1C;
+            	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+    	<img src="yo1.JPG" alt="Foto1" class="yo1-img">
+	<img src="yo2.JPG" alt="Foto2" class="yo2-img">
+	<img src="yo3.JPG" alt="Foto3" class="yo3-img">
+    	<h1>SOBRE MI</h1>
+	<h2>Nombre completo:</h2>
+    	<p>Pérez Rojo Abraham</p>
+    	<h2>Carrera:</h2>
+	<p>Ingeniería en Computación</p>
+	<h2>No. Cuenta:</h2>
+	<p>320149517</p>
+	<h2>Correo electrónico:</h2>
+	<p>abraham.perezr2704(a)gmail.com</p>
+	<h2>Teléfono:</h2>
+	<p>5580328378</p>
+	</div>
+
+	<div class="extra-option">
+    	<a href="integrante3.html" class="extra-option-btn">Regresar</a>
+	</div>
+
+
+</body>
+</html>
+
+
