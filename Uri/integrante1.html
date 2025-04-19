@@ -101,6 +101,15 @@
             animation: none;
         }
 
+        .profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover;  /* Ajusta la imagen sin deformarla */
+    border: 3px solid #007BFF; /* Un borde bonito */
+}
+
+
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {
                 transform: translateY(0);
@@ -120,8 +129,9 @@
 
         <!-- Icono para la foto de perfil, usando un avatar más grande -->
         <div class="profile-pic">
-            <i class="fas fa-user-circle"></i>
+            <img src="IMG_1062.JPG" alt="Foto de perfil">
         </div>
+        
 
         <div class="nav-links">
             <!-- Enlace a la página "Sobre Mí" -->
@@ -130,6 +140,7 @@
             <a href="gustos.html"><i class="fas fa-music"></i> Mis Gustos</a>
             <!-- Enlace a la página "Sitios Importantes" -->
             <a href="sitios.html"><i class="fas fa-star"></i> Sitios Importantes</a>
+            <a href="../Servidor.html"><i class="fas fa-home"></i> Inicio</a>
         </div>
     </div>
 </body>
