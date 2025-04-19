@@ -23,7 +23,15 @@ body {
 .menu img.titulo-imagen {
     width: 250px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
+
+.menu img.titulo-imagen:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 .menu h1 {
     margin-bottom: 20px;
