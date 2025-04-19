@@ -3,7 +3,25 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ddadd;
+
+    /* Fondo degradado suave */
+    background: linear-gradient(135deg, #1a1a2e, #3f3351, #ad82ad);
+    background-size: 400% 400%;
+    animation: fondoAnimado 20s ease infinite;
+    color: #fff; /* Mejora contraste en general si es necesario */
+}
+
+/* Animación del degradado */
+@keyframes fondoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .contenedor {
@@ -22,25 +40,25 @@ body {
 }
 
 .imagen {
-    width: 300px; /* Tamaño fijo para todas las imágenes */
-    height: 300px; /* Mantiene las proporciones de la imagen */
-    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, p {
-    font-size: 2em; /* Tamaño de texto común */
+    font-size: 2em;
 }
 
 ul {
-    list-style-type: none; /* Sin viñetas */
+    list-style-type: none;
     padding-left: 0;
     text-align: center;
 }
 
 ul li {
-    font-size: 1.5em; /* Tamaño de los elementos de la lista */
+    font-size: 1.5em;
     margin: 10px 0;
 }
 
@@ -50,7 +68,7 @@ ul li {
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: #dda0dd; /* morado pastel */
+    background-color: #dda0dd;
 }
 
 .pagina-inicio .imagenes {
@@ -60,7 +78,7 @@ ul li {
 }
 
 .pagina-inicio .imagen-lado {
-    width: 300px; /* Tamaño de las imágenes en la página principal */
+    width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -81,7 +99,7 @@ ul li {
 .pagina-inicio nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Aseguramos que los enlaces estén centrados */
+    text-align: center;
 }
 
 .pagina-inicio nav ul li {
@@ -95,5 +113,5 @@ ul li {
 }
 
 .pagina-inicio nav a:hover {
-    color: #ddadd;
+    color: white;
 }
