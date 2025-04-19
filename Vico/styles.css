@@ -1,60 +1,99 @@
-/* Estilos generales */
+/* Estilos generales (que aplican a todas las páginas) */
 body {
-    background-color: lavender; /* Fondo lavanda */
     font-family: 'Raleway', sans-serif;
-    color: white; /* Texto blanco */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('imagenes/fondo.jpg'); /* Imagen de fondo */
-    background-size: cover;
-    background-position: center;
+    background-color: #ddadd;
 }
 
 .contenedor {
-    background-color: rgba(128, 0, 128, 0.8); /* Recuadro grande morado con transparencia */
+    max-width: 700px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 15px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #dda0dd; /* Recuadro morado pastel */
+    border-radius: 15px; /* Bordes redondeados */
 }
 
-h1 {
-    font-size: 2.5rem;
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen {
+    width: 300px; /* Tamaño fijo para todas las imágenes */
+    height: 300px; /* Mantiene las proporciones de la imagen */
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+    font-size: 2em; /* Tamaño de texto común */
+}
+
+ul {
+    list-style-type: none; /* Sin viñetas */
+    padding-left: 0;
+    text-align: center;
+}
+
+ul li {
+    font-size: 1.5em; /* Tamaño de los elementos de la lista */
+    margin: 10px 0;
+}
+
+/* Estilos específicos para la página principal */
+.pagina-inicio .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #dda0dd; /* morado pastel */
+}
+
+.pagina-inicio .imagenes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pagina-inicio .imagen-lado {
+    width: 300px; /* Tamaño de las imágenes en la página principal */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-inicio .contenido {
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+.pagina-inicio h1 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
-nav ul {
+.pagina-inicio nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; /* Aseguramos que los enlaces estén centrados */
 }
 
-nav ul li {
-    margin: 15px 0;
+.pagina-inicio nav ul li {
+    margin: 10px 0;
 }
 
-nav ul li a {
+.pagina-inicio nav a {
     text-decoration: none;
-    color: black;
-    background-color: lavender; /* Fondo lavanda para los links */
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #333;
+    font-size: 1.3em;
 }
 
-nav ul li a:hover {
-    background-color: rgb(200, 180, 230); /* Cambio de color al pasar el mouse */
-    transform: scale(1.1); /
-
-nav {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-}
+.pagina-inicio nav a:hover {
+    color: #ddadd;
 }
